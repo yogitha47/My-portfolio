@@ -1,0 +1,215 @@
+/*UNIVERSAL CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e6f0fa;   /* light blue */
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #0a4275;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #06335a;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+section {
+    width: 70%;
+    padding: 20px;
+}
+
+aside {
+    width: 30%;
+    background-color: #d9e6f2;
+    padding: 20px;
+    border-left: 3px solid #0a4275;
+}
+
+footer {
+    background-color: #0a4275;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 12px auto;
+    border: 2px solid #0a4275;
+}
+
+.aside-pic {
+    width: 130px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 6px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.about-aside {
+    text-align: center;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+}
+
+/* FLOATING IMAGE EFFECT */
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.about-bg {
+    background-image: url("bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #0a4275;
+    color: white;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.portfolio-layout {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    gap: 30px;
+}
+
+.portfolio-main {
+    width: 70%;
+}
+
+.portfolio-aside {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.project-nav {
+    margin-bottom: 20px;
+}
+
+.project-nav a {
+    margin-right: 15px;
+    font-weight: bold;
+    color: #0a4275;
+    text-decoration: none;
+}
+
+.project-nav a:hover {
+    text-decoration: underline;
+}
+
+.project-box {
+    background-color: #ffffff;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+.project-box h3 {
+    color: #0a4275;
+    margin-bottom: 8px;
+}
+
+.services-container {
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.services-intro {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.service-box {
+    width: 260px;
+    height: 260px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-box h3 {
+    color: #0a4275;
+    font-size: 17px;
+}
+
+.service-box p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
